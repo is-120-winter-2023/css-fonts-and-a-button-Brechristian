@@ -188,10 +188,14 @@ The default styling for `<a>` elements includes an underline and usually a blue 
 
 Add CSS in your `styles/main.css` file (below the resets) to remove the underline by overriding the default styling of the `a` selector. Give links a color using one of your CSS color variables.
 
+<!-- done -->
+
 Finally, add a `:hover` pseudo-class to style links when the user hovers over them. Observe how some of the websites you visit frequently style their links. You can use a different color for the hover state, or you can use the same color and add an underline.
 | ⚠️ "Dead" links and hover states |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | You don't want dead links (links without an `href` attribute) to look like active links by having a hover state. Write a `:hover` selector that targets only links with an `href` attribute. **HINT**: `a[href]:hover`. |
+
+<!-- done -->
 
 | 💡 Other useful link pseudo-classes                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -209,10 +213,12 @@ Many links on the web are styled as buttons. Buttons are a common way to signal 
 
 - Add a link (`<a>`) below the text inside each of your two `<article>` elements. Use a common link name such as "Learn More" or "Contact" or "Buy Now", etc. The link can simply link to the top of the page (`href="#"`) for now.
 - Add `class="button"` to the `<a>`
+<!-- done -->
 - Following the examples we worked on in class, create a `.button` class in your CSS file to style the link as a modern, stylish "web button." Since we will later use this class to style a form `<button>`, don't declare your button styles using the selector `a.button` as it will limit the class to just `<a>` elements and will prevent you from re-using the class on your `<button>` element.
 - Remember that by default, an `<a>` is an inline element. As such, it won't display top and bottom padding correctly. Use the `display` property to change the display type to `inline-block`. If you want the button to be the full width of its container, you can set the display to `block`. Avoid setting an absolute width on the button as it can cause issues with responsive design.
 - Add a `:hover` effect for your button. Make sure you override any existing `a:hover` effects if you added any to your `a` selector. See the tip below if you are having trouble overriding the default `<a>` styles.
 - Add a transition to smooth the change when the user hovers over the button. Below is a simple transition that you can use. If you change a property other than background-color, change the property name in the transition.
+  <!-- done -->
 
   ```css
   .button {
@@ -230,10 +236,10 @@ Many links on the web are styled as buttons. Buttons are a common way to signal 
   We will learn more about transitions later in the course.
 
 - Change the cursor to a pointer when it's on top of/in the web button.
-
-| 💡 Use specificity not `!important` to override default styles                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| If you notice that some styles you set on your `<a>` elements aren't overriden with the `.button` or `.button:hover` selectors, add additional declarations using selectors with enough specificity to override the default `<a>` styles. Do not use `!important` to override the default styles. Using `!important` is generally bad practice and should be avoided.<br><br>In VS Code, if you hover over a selector, it will display the selector's specificity.<br><br>![vscode specificity](readme-assets/vscode-specificity.png) |
+  <!-- done -->
+  | 💡 Use specificity not `!important` to override default styles                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+  | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+  | If you notice that some styles you set on your `<a>` elements aren't overriden with the `.button` or `.button:hover` selectors, add additional declarations using selectors with enough specificity to override the default `<a>` styles. Do not use `!important` to override the default styles. Using `!important` is generally bad practice and should be avoided.<br><br>In VS Code, if you hover over a selector, it will display the selector's specificity.<br><br>![vscode specificity](readme-assets/vscode-specificity.png) |
 
 ## Whitespace
 
@@ -260,6 +266,8 @@ main {
   max-width: 50rem;
 }
 ```
+
+<!-- done -->
 
 We will eventually convert `main` to a flex container, but for now, this will work.
 
@@ -322,6 +330,8 @@ aside {
 Add padding to your footer and give it a background color. Adjust the color of the `footer p` element if needed. Make sure that you don't have any margins keeping the footer background color from extending to the bottom of the viewport.
 
 ![footer](readme-assets/footer.png)
+
+<!-- done -->
 
 ### Check for errors or warnings
 

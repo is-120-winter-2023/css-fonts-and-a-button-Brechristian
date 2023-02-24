@@ -99,14 +99,75 @@ body {
 h1 {
   font-family: "Oswald", sans-serif;
   color: var(--color-primary);
+  font-size: 3.5rem;
 }
 
 h2 {
   font-family: "Oswald", sans-serif;
   color: var(--color-secondary);
+  font-size: 2.5rem;
 }
 
 h3 {
   font-family: "Oswald", sans-serif;
   color: var(--color-accent);
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+a[href]:hover {
+  color: var(--color-secondary);
+}
+
+.button {
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+  padding: 0.5rem 1rem;
+  transition: background-color 450ms ease-in-out, color 450ms ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 8rem;
+}
+
+.button:hover {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+a.button:hover {
+  color: white;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 75rem;
+  padding: 0 1rem;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 50rem;
+}
+p {
+  margin-bottom: 1.5rem;
+}
+
+article,
+aside {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--color-primary);
+}
+
+footer p {
+  color: white;
+  margin: 0;
+  padding: 3rem 1rem 6rem;
 }
